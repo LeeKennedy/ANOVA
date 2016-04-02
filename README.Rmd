@@ -1,5 +1,5 @@
 ---
-title: "ANOVA Scripts Project"
+title: "ANOVA Scripts Collection"
 author: "Lee Kennedy"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document

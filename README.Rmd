@@ -1,0 +1,58 @@
+---
+title: "ANOVA Scripts Project"
+author: "Lee Kennedy"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+
+## ANOVA.Report
+
+This function is for comparing two or more data sets for equivalence using ANOVA.  The output can be a Word, pdf or html document that includes:
+
+1. The data
+2. A boxplot of the data
+3. An ANOVA table and 
+4. A Tukey intepretation of the data.
+
+It expects a data table of the form usually used for ANOVA in Excel:
+
+```{r, echo=FALSE}
+A <- c(2,4,3,3)
+B <- c(2,3,5,2)
+C <- c(1,1,5,2)
+D <- c(2,3,2,2)
+E <- c(2,3,3,4)
+x <- data.frame(A,B,C,D,E)
+print(x, row.names = FALSE)
+```
+
+
+And, optionally, will accept units (in inverted commas) for labelling a box plot.
+
+## generic.1factor.ANOVA.R
+
+This is a more manual version of **ANOVA.Report**
+
+It will also produce sd(r) and sd(R) from the data.
+
+Optionally, it will export the ANOVA summary table.
+
+## ANOVA_Chem examples
+
+Based on the book:
+
+A number of examples:
+
+1. A comparison of two or more methods
+2. The impact of sampling
+3. Two analysts using two techniques (comparable)
+4. Two analysts using two techniques (significant difference)
+
+## ANOVA2
+
+Early stages example of interactions.
+
+## anova.playing
+
+Based on a book of Alex's relating to nested design.  Needs documentation.

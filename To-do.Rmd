@@ -1,0 +1,21 @@
+---
+title: "Things.to.do"
+author: "Lee Kennedy"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+output: html_document
+---
+
+## Things to do:
+
+* Improve on the boxplot output in **generic.1factor.ANOVA**
+* Some sort of decent report output from **ANOVA_Chem_examples**
+* Fully document what is going on in **ANOVA2**, does it have lab application?
+* Fully document what is going on in **ANOVA.playing**, (From Alex's text book) does it have lab application?
+
+
+----------------------------------
+## Things Done:
+
+Date       |  Item
+-----------|------------------------
+01/04/2016 | Tidied up and started **Read.Me**

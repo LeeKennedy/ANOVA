@@ -30,6 +30,8 @@ print(x, row.names = FALSE)
 
 And, optionally, will accept units (in inverted commas) for labelling a box plot.
 
+**Usage**: with a dataframe named "x": **anova_report(x,doc_type)** where doc_type is docx, pdf or html.  By default it equals html.
+
 ## generic.1factor.ANOVA.R
 
 This is a more manual version of **ANOVA.Report**

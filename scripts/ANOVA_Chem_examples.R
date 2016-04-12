@@ -2,7 +2,7 @@ library("ProjectTemplate")
 load.project()
 
 # Example 1 -Comparison of methods --------------------------------
-aov_data <- read_excel("anova_data-a.xlsx", sheet = 1)
+aov_data <- read_excel("data/anova_data-a.xlsx", sheet = 1)
 
 
 boxplot(aov_data)
@@ -16,7 +16,7 @@ TukeyHSD(aov_1)
 
 # Example 2 ---- impact of sampling ------------------------------------
 
-aov_data_2 <- read_excel("anova_data-b.xlsx", sheet = 1)
+aov_data_2 <- read_excel("data/anova_data-b.xlsx", sheet = 1)
 
 boxplot(aov_data_2)
 
@@ -38,7 +38,7 @@ pct_method_variance <- round((method_sd^2)*100/(method_sd^2 + sampling_sd^2),1)
 
 # Example 3 -- Two analysts, two techniques (A) ---------------------------
 
-aov_data_3 <- read_excel("anova_data-d.xlsx", sheet = 1)
+aov_data_3 <- read_excel("data/anova_data-d.xlsx", sheet = 1)
 
 aov_data_st3 <- gather(data=aov_data_3,key=Analyst,value=Result,na.rm=FALSE,Quinn,Martin)
 
@@ -59,7 +59,7 @@ summary(aov_3)
 
 # Example 4 -- Two analysts, two techniques (B) ---------------------------
 
-aov_data_4 <- read_excel("anova_data-e.xlsx", sheet = 1)
+aov_data_4 <- read_excel("data/anova_data-e.xlsx", sheet = 1)
 
 aov_data_st4 <- gather(data=aov_data_4,key=Analyst,value=Result,na.rm=FALSE,Quinn,Martin)
 

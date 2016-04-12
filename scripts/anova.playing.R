@@ -8,7 +8,7 @@ load.project()
 # 4 : Tertiary Factor
 # 5 : Result (value)
 
-input <- read.csv("tylosin.csv", header = TRUE)
+input <- read.csv("data/tylosin.csv", header = TRUE)
 
 names <- names(input)
 colnames(input) <- c("A","B","C","D","E")
